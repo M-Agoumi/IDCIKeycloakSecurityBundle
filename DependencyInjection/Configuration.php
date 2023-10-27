@@ -24,6 +24,7 @@ class Configuration implements ConfigurationInterface
                 ->scalarNode('server_url')->end()
                 ->scalarNode('server_public_url')->end()
                 ->scalarNode('server_private_url')->end()
+                ->scalarNode('auth_server_protocol')->end()
                 ->scalarNode('realm')
                     ->isRequired()
                     ->cannotBeEmpty()
